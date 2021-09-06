@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html>
+<title>Web Page Design</title>
 <head>
-    <title></title>
+<script>
+
+let n = 1
+ var N = parseInt(prompt("enter the value n:"));
+function fun1()
+{
+    if (n <= N)
+    {
+        document.write( n+" ");
+        n++;
+        fun2();
+    }
+    else
+    {
+        return;
+    }
+}
+ 
+function fun2()
+{
+    if (n <= N)
+    {
+        document.write(n+" ");
+        n++;
+        fun1();
+    }
+    else
+    {
+        return;
+    }
+}
+ 
+fun1();
+</script>
 </head>
 <body>
-<pre>    <script type="text/javascript">               
-        var n = parseInt(prompt("enter the value n:"));
-
-        var i = 1;
-        main(i);
-        function main(k) 
-        { 
-             
-            if (k <= n) { 
-                document.writeln(k);
-                k++;
-                main(k); //recursive function
-            } 
-            return 0; 
-        } 
-        
-
-
-    </script>
-</pre>
 </body>
 </html>
